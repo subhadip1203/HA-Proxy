@@ -1,0 +1,52 @@
+version: '3.1'
+
+services:
+  app1:
+    build: ./nodeproject
+    container_name: app1
+    environment:
+      - u_no=1
+    ports:
+      - 5001:8000
+    networks:
+      - test
+
+  app2:
+    build: ./nodeproject
+    container_name: app2
+    environment:
+      - u_no=2
+    ports:
+      - 5002:8000
+    networks:
+      - test
+  
+  app3:
+    build: ./nodeproject
+    container_name: app3
+    environment:
+      - u_no=3
+    ports:
+      - 5003:8000
+    networks:
+      - test
+
+  app4:
+    build: ./nodeproject
+    container_name: app4
+    environment:
+      - u_no=4
+    ports:
+      - 5004:8000
+    networks:
+      - test
+
+networks:
+  test:
+
+
+
+
+# docker-compose -f docker-compose_prod.yml up -d
+# docker-compose -f docker-compose_prod.yml up --build
+# docker-compose -f docker-compose_prod.yml down

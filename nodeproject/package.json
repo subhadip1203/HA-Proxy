@@ -1,0 +1,15 @@
+{
+  "name": "localhost",
+  "version": "1.0.0",
+  "description": "1. go to : https://github.com/FiloSottile/mkcert\r 2. install in mac , ubuntu or windows",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.1.3",
+    "express": "^4.18.2"
+  }
+}
